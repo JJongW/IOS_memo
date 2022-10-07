@@ -5,7 +5,7 @@ struct DetailView: View{
     
     @EnvironmentObject var store: MemoStore
     
-    @State private var showComposer=false
+    @State private var showComposer = false
     
     var body: some View{
         VStack{
@@ -38,7 +38,7 @@ struct DetailView: View{
             }
         }
         .sheet(isPresented: $showComposer){
-            ComposeView(memo:memo)
+            ComposeView(memo: memo)
         }
     }
 }

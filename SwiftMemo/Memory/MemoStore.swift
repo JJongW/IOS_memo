@@ -7,8 +7,7 @@ class MemoStore:ObservableObject{
         list=[
             Memo(content: "Hello", insertDate: Date.now),
             Memo(content: "Awesome", insertDate:Date.now.addingTimeInterval(3600 * -24)),
-            Memo(content: "SwiftUI",
-                 insertDate:Date.now.addingTimeInterval(3600 * -24))
+            Memo(content: "SwiftUI", insertDate:Date.now.addingTimeInterval(3600 * -24))
         ]
     }
 
@@ -20,7 +19,6 @@ class MemoStore:ObservableObject{
         guard let memo = memo else{
             return
         }
-
         memo.content =  content
     }
 

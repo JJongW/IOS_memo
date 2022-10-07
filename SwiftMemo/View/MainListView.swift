@@ -3,14 +3,14 @@ import SwiftUI
 struct MainListView: View {
     @EnvironmentObject var store: MemoStore
     
-    @State private var showComposer: Bool=false
+    @State private var showComposer: Bool = false
     
     var body: some View{
         NavigationView{
-            List(store.list){memo in
+            List(store.list){ memo in
                 NavigationLink{
                     DetailView(memo: memo)
-                }label: {
+                } label: {
                     MemoCell(memo: memo)
                 }
             }
@@ -26,7 +26,6 @@ struct MainListView: View {
             .sheet(isPresented: $showComposer){ ComposeView()
             }
         }
-        
     }
 }
 
