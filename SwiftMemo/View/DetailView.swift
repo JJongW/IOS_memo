@@ -29,9 +29,9 @@ struct DetailView: View{
                     }
                 }
             
-            .navigationTitle("메모 보기")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar{
+                .navigationTitle("메모 보기").toolbar(.hidden, for: .bottomBar)
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar{
                 ToolbarItemGroup(placement:
                         .bottomBar)
                 {
