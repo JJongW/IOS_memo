@@ -5,9 +5,11 @@ class MemoStore:ObservableObject{
 
     init(){
         list=[
-            Memo(content: "Hello", insertDate: Date.now),
-            Memo(content: "Awesome", insertDate:Date.now.addingTimeInterval(3600 * -24)),
-            Memo(content: "SwiftUI", insertDate:Date.now.addingTimeInterval(3600 * -24))
+            Memo(content: "메모 테스트5", insertDate: Date.now),
+            Memo(content: "메모 테스트4", insertDate: Date.now),
+            Memo(content: "메모 테스트3", insertDate: Date.now),
+            Memo(content: "메모 테스트2", insertDate:Date.now.addingTimeInterval(3600 * -24)),
+            Memo(content: "메모 테스트1", insertDate:Date.now.addingTimeInterval(3600 * -24))
         ]
     }
 
