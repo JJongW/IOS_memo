@@ -39,7 +39,6 @@ struct ComposeView: View{
                         }else{
                             store.insert(memo: content)
                         }
-                        store.insert(memo: content)
                         
                         dismiss()
                     }label:{
